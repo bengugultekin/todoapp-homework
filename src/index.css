@@ -4,7 +4,159 @@ body {
   background: #EAEAEA;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+h1 {
+  color: #848484;
+  font-family: 'Open Sans', sans-serif;
+
 }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.searchInput {
+  background: #fff;    
+  border: 1px solid #848484;
+  box-shadow: none;
+  z-index: 3;
+  height: 30px;
+  margin: 0 auto;
+  width: 250px;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 5px 20px;
+  
+  
+}
+
+.content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+}
+
+#textArea {
+  display:inline-block;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  height: 300px;
+  width: 500px;
+  min-width: 500px;
+  min-height: 300px;
+}
+
+textarea:focus, input:focus {
+  outline: 0;
+  border: 1px solid #848484;
+}
+
+button {
+  background-color: blueviolet;
+  color: white;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  width: 150px;
+  font-size: 16px;
+}
+
+.notelist {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.note {
+  width: calc(25% - 10px);
+  box-sizing: border-box;
+  padding: 20px 20px;
+  margin: 50px 5px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.note1 {
+  background-color: #2ecc71;
+}
+
+.note2 {
+  background-color: #3498db;
+}
+
+.note3 {
+  background-color: #f1c40f;
+}
+
+.note4 {
+  background-color: #e74c3c;
+}
+
+/* Radio Css */
+.toolbar {
+  margin-top: -50px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.custom-radios div {
+  display: inline-block;
+}
+.custom-radios input[type=radio] {
+  display: none;
+}
+.custom-radios input[type=radio] + label {
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+.custom-radios input[type=radio] + label span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  line-height: 44px;
+}
+.custom-radios input[type=radio] + label span img {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.custom-radios input[type=radio]#color-1 + label span {
+  background-color: #2ecc71;
+}
+.custom-radios input[type=radio]#color-2 + label span {
+  background-color: #3498db;
+}
+.custom-radios input[type=radio]#color-3 + label span {
+  background-color: #f1c40f;
+}
+.custom-radios input[type=radio]#color-4 + label span {
+  background-color: #e74c3c;
+}
+.custom-radios input[type=radio]:checked + label span img {
+  opacity: 1;
+}
+
+

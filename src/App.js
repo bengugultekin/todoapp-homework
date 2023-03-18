@@ -1,27 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Content from  './components/Content';
+import Notelist from './components/Notelist';
 
 function App() {
   return (
-    <div className="App">
-      <h1>NotesApp</h1>
-      <input placeholder='Search'></input>
-      <textarea></textarea>
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-    </div>
+    <>
+      <section className='todoapp'>
+        <Header/>
+        <Content/>
+        <Notelist/>
+      </section>
+    </>
   );
 }
 
