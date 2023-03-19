@@ -89,6 +89,7 @@ button {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
+  word-break: break-all;
 }
 
 .note1 {
@@ -105,6 +106,17 @@ button {
 
 .note4 {
   background-color: #e74c3c;
+}
+
+.empty {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 50px;
+  color: gray;
+}
+
+.all {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
 
 /* Radio Css */

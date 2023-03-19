@@ -1,17 +1,17 @@
 import {createSlice} from '@reduxjs/toolkit';
 
-export const todosSlice = createSlice({
-    name: 'todos',
+export const notesSlice = createSlice({
+    name: 'notes',
     initialState: {
         items: [
             {
                 id: '1',
-                classid:'1',
+                color: 1,
                 title: 'Learn React',
             },
             {
                 id: '2',
-                classid:'2',
+                color: 2,
                 title: 'Read a book'
             }
         ]
@@ -19,9 +19,9 @@ export const todosSlice = createSlice({
     reducers: {
         addNew: (state, action) => {
             state.items.push(action.payload);
-        },
+        }
     },
 });
 
-export const {addNew} = todosSlice.actions;
-export default todosSlice.reducer;
+export const {addNew} = notesSlice.actions;
+export default notesSlice.reducer;
