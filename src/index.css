@@ -68,6 +68,7 @@ button {
   border-radius: 20px;
   width: 150px;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .notelist {
@@ -81,15 +82,17 @@ button {
 }
 
 .note {
+  position: relative;
   width: calc(25% - 10px);
   box-sizing: border-box;
   padding: 20px 20px;
+  padding-right: 30px;
   margin: 50px 5px;
   border-radius: 10px;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  word-break: break-all;
+  word-break:keep-all;
 }
 
 .note1 {
@@ -117,6 +120,39 @@ button {
 .all {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
+}
+
+.notelist li .destroy {
+  opacity: 0.7;
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	margin: auto 0;
+	font-size: 30px;
+	color: #fff;
+	margin-bottom: 11px;
+	transition: color 0.2s ease-out;
+  background-color: transparent;
+  border: none;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.notelist li .destroy:hover {
+  opacity: 1;
+  background-color: transparent;
+  border: none;
+}
+
+.notelist li .destroy:after {
+	content: '×';
+}
+
+.notelist li:hover .destroy {
+	display: block;
 }
 
 /* Radio Css */

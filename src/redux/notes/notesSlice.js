@@ -19,9 +19,14 @@ export const notesSlice = createSlice({
     reducers: {
         addNew: (state, action) => {
             state.items.push(action.payload);
+        },
+        destroy: (state, action) => {
+            const id = action.payload;
+            const filtered = state.items.filter((item) => item.id !== id);
+            state.items = filtered;
         }
     },
 });
 
-export const {addNew} = notesSlice.actions;
+export const {addNew, destroy} = notesSlice.actions;
 export default notesSlice.reducer;
