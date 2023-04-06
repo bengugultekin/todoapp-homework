@@ -1,14 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background: #EAEAEA;
+  background: #eaeaea;
 }
 
-
 h1 {
-  color: #848484;
-  font-family: 'Open Sans', sans-serif;
-
+  color: rgb(233, 107, 159);
+  font-family: "Open Sans", sans-serif;
 }
 
 .header {
@@ -17,7 +15,7 @@ h1 {
   align-items: center;
 }
 .searchInput {
-  background: #fff;    
+  background: #fff;
   border: 1px solid #848484;
   box-shadow: none;
   z-index: 3;
@@ -28,8 +26,6 @@ h1 {
   font-size: 16px;
   margin-bottom: 20px;
   padding: 5px 20px;
-  
-  
 }
 
 .content {
@@ -42,8 +38,8 @@ h1 {
 }
 
 #textArea {
-  display:inline-block;
-  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
   margin-top: 20px;
   border: 1px solid #fff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -56,13 +52,14 @@ h1 {
   min-height: 300px;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   outline: 0;
   border: 1px solid #848484;
 }
 
 button {
-  background-color: blueviolet;
+  background-color: rgb(233, 107, 159);
   color: white;
   border: 1px solid #fff;
   border-radius: 20px;
@@ -90,9 +87,9 @@ button {
   margin: 50px 5px;
   border-radius: 10px;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  word-break:keep-all;
+  word-break: keep-all;
 }
 
 .note1 {
@@ -112,29 +109,29 @@ button {
 }
 
 .empty {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-top: 50px;
   color: gray;
 }
 
 .all {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
 
 .notelist li .destroy {
   opacity: 0.7;
-	display: none;
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 40px;
-	height: 40px;
-	margin: auto 0;
-	font-size: 30px;
-	color: #fff;
-	margin-bottom: 11px;
-	transition: color 0.2s ease-out;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 11px;
+  transition: color 0.2s ease-out;
   background-color: transparent;
   border: none;
   transition: all 0.5s ease;
@@ -148,11 +145,11 @@ button {
 }
 
 .notelist li .destroy:after {
-	content: '×';
+  content: "×";
 }
 
 .notelist li:hover .destroy {
-	display: block;
+  display: block;
 }
 
 /* Radio Css */
@@ -165,15 +162,15 @@ button {
 .custom-radios div {
   display: inline-block;
 }
-.custom-radios input[type=radio] {
+.custom-radios input[type="radio"] {
   display: none;
 }
-.custom-radios input[type=radio] + label {
+.custom-radios input[type="radio"] + label {
   color: #333;
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
-.custom-radios input[type=radio] + label span {
+.custom-radios input[type="radio"] + label span {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -187,24 +184,22 @@ button {
   text-align: center;
   line-height: 44px;
 }
-.custom-radios input[type=radio] + label span img {
+.custom-radios input[type="radio"] + label span img {
   opacity: 0;
   transition: all 0.3s ease;
 }
-.custom-radios input[type=radio]#color-1 + label span {
+.custom-radios input[type="radio"]#color-1 + label span {
   background-color: #2ecc71;
 }
-.custom-radios input[type=radio]#color-2 + label span {
+.custom-radios input[type="radio"]#color-2 + label span {
   background-color: #3498db;
 }
-.custom-radios input[type=radio]#color-3 + label span {
+.custom-radios input[type="radio"]#color-3 + label span {
   background-color: #f1c40f;
 }
-.custom-radios input[type=radio]#color-4 + label span {
+.custom-radios input[type="radio"]#color-4 + label span {
   background-color: #e74c3c;
 }
-.custom-radios input[type=radio]:checked + label span img {
+.custom-radios input[type="radio"]:checked + label span img {
   opacity: 1;
 }
-
-
